@@ -1,0 +1,17 @@
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    margin-bottom: 20px;
+    top: 0;
+    z-index: 1000;
+   
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+    margin:  auto;
+}

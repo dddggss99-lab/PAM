@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados salvos</title>
+  <link rel="stylesheet" href="../css/styleQuiz.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/styleResultados.css">
+</head>
+
+<body>
+
+  <section class="quiz">
+    <div class="container">
+
+      <header class="header">
+        <img src="../imgHero/oc (1).png" alt="logo" class="logo">
+      </header>
+
+      <h2 class="title">Resultados salvos no banco</h2>
+
+      <div id="mensagem" class="mensagem" hidden></div>
+
+      <div class="tabela-wrap">
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Nascimento</th>
+              <th>Sexo</th>
+              <th>Dobra</th>
+              <th>Respostas</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="corpoTabela"></tbody>
+        </table>
+      </div>
+
+      <div class="buttons">
+        <a href="../index.html">
+          <button class="btn back">← Voltar ao início</button>
+        </a>
+        <button class="btn next" id="btnAtualizarLista">↻ Atualizar lista</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL DE EDIÇÃO -->
+  <dialog id="modalEditar">
+    <form id="formEditar" method="dialog">
+      <h3>Editar resultado <span id="editarId"></span></h3>
+
+      <label>Nome
+        <input type="text" name="nome" required>
+      </label>
+
+      <label>E-mail
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Nascimento
+        <input type="date" name="data_nascimento" required>
+      </label>
+
+      <label>Sexo
+        <select name="sexo" required>
+          <option value="MASC">MASC</option>
+          <option value="FEM">FEM</option>
+          <option value="OUTROS">OUTROS</option>
+        </select>
+      </label>
+
+      <label>Dobra
+        <select name="resultado" required>
+          <option value="Terra">Terra</option>
+          <option value="Água">Água</option>
+          <option value="Ar">Ar</option>
+          <option value="Fogo">Fogo</option>
+        </select>
+      </label>
+
+      <fieldset class="respostas">
+        <legend>Respostas do quiz</legend>
+        <div id="camposRespostas"></div>
+      </fieldset>
+
+      <div class="modal-botoes">
+        <button type="button" class="btn back" id="btnCancelarEdicao">Cancelar</button>
+        <button type="submit" class="btn next">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div>
+        <p>Developed by:</p>
+        <p>Beatriz Nascimento- 2DS</p>
+        <p>Debora Gomes - 2DS</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div>
+        <p>Instagram:</p>
+        <a href="https://www.instagram.com/it_sbea" target="_blank" rel="noopener noreferrer">
+          <p>@it_sbea</p>
+        </a>
+        <a href="https://www.instagram.com/ggdeb_" target="_blank" rel="noopener noreferrer">
+          <p>@ggdeb_</p>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+<script src="../js/resultados.js"></script>
+
+</html>

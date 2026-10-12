@@ -1,0 +1,165 @@
+/* TABELA DE RESULTADOS */
+.mensagem {
+  max-width: 900px;
+  margin: 0 auto 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  background: #fff3cd;
+  color: #754f4f;
+}
+
+.mensagem.erro {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.mensagem.ok {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.tabela-wrap {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  overflow-x: auto;
+  border-radius: 12px;
+  background: #fffaf7;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.tabela th {
+  background: #6cc4e7;
+  color: #754f4f;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabela td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e8dcd2;
+  color: #4a3a3a;
+}
+
+.tabela tbody tr:hover {
+  background: #fff1e0;
+}
+
+.tabela tr.destaque {
+  background: #ffe8a3;
+}
+
+.tabela .vazio {
+  text-align: center;
+  padding: 25px;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-acao {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-acao:hover {
+  transform: scale(1.06);
+}
+
+.btn-editar {
+  background: #3b8ed0;
+}
+
+.btn-excluir {
+  background: #d9534f;
+}
+
+/* MODAL */
+dialog {
+  border: none;
+  border-radius: 15px;
+  padding: 25px;
+  width: min(420px, 92vw);
+  margin: auto;
+  background: #fffaf7;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+dialog h3 {
+  margin-bottom: 15px;
+  color: #754f4f;
+}
+
+dialog label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #754f4f;
+}
+
+dialog input,
+dialog select {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px;
+  border: 1px solid #c9b8a8;
+  border-radius: 6px;
+}
+
+.modal-botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+dialog {
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+.respostas {
+  border: 1px solid #c9b8a8;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.respostas legend {
+  padding: 0 6px;
+  font-weight: bold;
+  color: #754f4f;
+}
+
+#camposRespostas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+#camposRespostas label {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.tabela td:nth-child(7) {
+  font-size: 0.85rem;
+  min-width: 170px;
+}

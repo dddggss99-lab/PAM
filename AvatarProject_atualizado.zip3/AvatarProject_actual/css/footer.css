@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  background: #d88542;
+  color: #fff;
+  padding: 20px 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ALINHA COM O CONTEÚDO */
+.footer-content {
+  max-width: 600px; /* mesmo do container */
+  margin: 0 auto;
+  padding: 0 20px;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider {
+  width: 1px;
+  height: 60px;
+  background: #fff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .divider {
+    display: none;
+  }
+}
